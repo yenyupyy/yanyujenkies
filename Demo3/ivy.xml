@@ -1,0 +1,14 @@
+<ivy-module version="2.0">
+	<info 
+		organisation="ch"
+		module="module3"
+		status="integration"
+	/>
+	<publications>
+		<artifact name="jar3"  ext="jar" />
+	</publications>
+	<dependencies>
+		 <dependency org="commons-lang" name="commons-lang" rev="2.6"/>
+        <dependency org="commons-cli" name="commons-cli" rev="1.4"/>
+	</dependencies>
+</ivy-module>

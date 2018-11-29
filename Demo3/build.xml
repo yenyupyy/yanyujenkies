@@ -1,0 +1,13 @@
+<project name="Demo3" xmlns:ivy="antlib:org.apache.ivy.ant" default="publish-local">
+	<property name="ivy.local.default.root" value="${basedir}/../repository/local"/>
+	<target name="publish-local">
+		<ivy:resolve/>
+		<ivy:publish artifactspattern="${basedir}/build/[artifact].[ext]"
+					 resolver="local"
+				     pubrevision="1.0"
+					 status="integration"
+					 forcedeliver="true"
+		/>
+		<ivy:retrieve/>
+	</target>
+</project>
